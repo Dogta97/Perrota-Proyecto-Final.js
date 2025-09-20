@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor USD ⇄ ARS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+</head>
+<body>
+
+
+  <div class="contenedor">
+    <h1>Conversor de Monedas</h1>
+
+    <form id="formulario">
+      <label for="monto" class="label-monto">Monto:</label>
+      <input type="number" id="monto" placeholder="Ingrese monto" required>
+
+      <label for="tipo-conversion" class="label-conversion">Conversión:</label>
+      <select id="tipo-conversion">
+        <option value="ars-usd">Pesos Argentinos → Dólares</option>
+        <option value="usd-ars">Dólares → Pesos Argentinos (con Impuesto PAÍS)</option>
+      </select>
+
+      <button type="submit">Convertir</button>
+    </form>
+
+    <div id="resultado" class="resultado"></div>
+
+    <h2>Historial de Conversiones</h2>
+    <ul id="historial" class="lista-historial"></ul>
+  </div>
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>

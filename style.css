@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Orbitron';
+    src: url('./assets/orbitron.woff2') format('woff2'),
+         url('./assets/orbitron.woff') format('woff');
+}
+
+body {
+  font-family: 'Orbitron', Arial, sans-serif;
+  background-color: #f4f6f9;
+  margin: 0;
+  padding: 0;
+  background-image: url(./assets/blue-backg.jpg);
+}
+
+.contenedor {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #001aff;
+}
+
+.label-monto, .label-conversion{
+  color: #007bff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #0084ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+button:hover {
+  background-color: #003772;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e9f7ef;
+  border: 1px solid #28a745;
+  border-radius: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.lista-historial {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-historial li {
+  background: #f1f1f1;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 20px;
+  font-size: 14px;
+}
